@@ -22,6 +22,6 @@ echo -e "\n\n" > index.md
 for notebook in $OUTPUT_PATH/*.html
 
 do
-  echo "http://pages.peakbreaker.com/present-myself-site/$notebook" | tee -a index.md
+  echo "[$notebook](http://pages.peakbreaker.com/present-myself-site/$notebook)" | tee -a index.md
   echo -e "\n" >> index.md
 done
