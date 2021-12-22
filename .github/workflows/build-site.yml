@@ -19,7 +19,7 @@ jobs:
       - name: Install some libs
         run: pip install jupyter
       - name: Generate some data for the site
-        run: bash compile_index.sh notebooks base_document.md build/my_notebooks
+        run: bash compile_index.sh notebooks template.md build/my_notebooks
 
       - uses: docker://pandoc/core:2.9
         with:
