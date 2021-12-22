@@ -17,7 +17,7 @@ cd ..
 
 jupyter nbconvert --to html --output-dir $OUTPUT_PATH/ $JUPYTER_FOLDER/*.ipynb
 
-echo -e "\n\n" > index.md
+echo -e "\n\n" >> index.md
 
 for notebook in $OUTPUT_PATH/*.html
 
